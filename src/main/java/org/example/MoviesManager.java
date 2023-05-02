@@ -3,11 +3,13 @@ package org.example;
 public class MoviesManager {
     private int limit;
     private String[] movies = new String[0];
+
     public MoviesManager() {
-        this.limit =10;
+        this.limit = 10;
     }
+
     public MoviesManager(int limit) {
-        this.limit=limit;
+        this.limit = limit;
     }
 
     public void add(String movie) {
