@@ -22,7 +22,8 @@ public class MoviesManager {
     }
 
     public String[] findAll() {
-        return movies;
+        //сборка падает если возвращать приватный массив, поэтому возвращаем его клон
+        return movies.clone();
     }
 
     public String[] findLast() {
